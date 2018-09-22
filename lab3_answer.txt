@@ -1,0 +1,12 @@
+When I sent message from client in Multicast UDP when server is not available, I received the following output:
+
+
+
+C:\Users\Nishtha Atrey\Desktop\Python 3>python multicast_udp_client.py
+
+Datagram 'Client: Ping' received from ('10.0.0.26', 8888)
+
+
+
+Which means that the client received the message sent by itself, as the client is also a part of the multicast address group 
+and the messages will by received by all the listeners in the group including the client as well.
